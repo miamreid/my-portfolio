@@ -4,55 +4,91 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../my-portfolio/assets/style.css">
         <title>Mia Reid: Digital Marketer, Coder in Progress, Killer of Plants</title>
     </head>
     <body>
         <header>
-            <h1>Hi, I'm Mia.</h1>
+            <h1>MIA REID</h1>
             <nav>
                 <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">My Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <aside>
-            <img src="../my-portfolio/assets/mia-reid-headshot.png" alt="Mia Reid Headshot"/>
-            <p>I'm A Digital Marketer, Coder in Progress, Killer of Plants</p>
+        <section class="hero">
+            <h2 id="h2-hero">Hi, I'm Mia.</h2>
+            <h2>I'm A Digital Marketer, Coder in Progress, Killer of Plants</h2>
+        </section>
+        <!--
+            <aside>
             <ul>
-                <li><a href="https://www.linkedin.com/in/mia-reid/"><img src="../my-portfolio/assets/my-linkedin.png" alt="Linkedin"/></a></li>
-                <li><a href="mailto:miamreid@gmail.com"><img src="../my-portfolio/assets/telegram.png" alt="Email"/></a></li>
-                <li><a href="https://github.com/miamreid"><img src="../my-portfolio/assets/github.png" alt="Github"/></a></li>
-                <li><a href="https://open.spotify.com/user/123392913?si=60d385aa458a49ed"><img src="../my-portfolio/assets/spotify.png" alt="Spotify"/></a></li>
-                <li><a href="https://www.instagram.com/miamouse/"><img src="../my-portfolio/assets/my-instagram.png" alt="Instagram"/></a></li>
+                <li><a href="https://www.linkedin.com/in/mia-reid/"><img class="icons" src="../my-portfolio/assets/my-linkedin.png" alt="Linkedin"/></a></li>
+                <li><a href="mailto:miamreid@gmail.com"><img class="icons" src="../my-portfolio/assets/telegram.png" alt="Email"/></a></li>
+                <li><a href="https://github.com/miamreid"><img class="icons" src="../my-portfolio/assets/github.png" alt="Github"/></a></li>
+                <li><a href="https://open.spotify.com/user/123392913?si=60d385aa458a49ed"><img class="icons" src="../my-portfolio/assets/spotify.png" alt="Spotify"/></a></li>
+                <li><a href="https://www.instagram.com/miamouse/"><img class="icons" src="../my-portfolio/assets/my-instagram.png" alt="Instagram"/></a></li>
             </ul>
-           
-        </aside>
-        <section>
+        </aside><!-->
+        <section class="about" id="about">
             <h2>About Me</h2>
-            <p>Hello! My name is Mia and I'm a digital marketer. I love to create things specifically for your website or mobile app.</p>
-            <p>I am currently the Marketing Manager at Stax Payments, a leading FinTech company headquartered in Orlando, FL. More specifically, I work for the fastest-growing business unit within Stax, Stax Connect. It's been a dream of mine to breakthrough into the tech space in some capacity and I continue to pull a seat up to the table where I haven't been invited (yet).</p>
-            <p>My marketing background is incredibly diverse, with a range of skillsets and industries served. Content strategy, email development, marketing operations, search engine optimization, and business operations are just a few of the skills I possess within my arsenal. Outside of marketing,  my skillset includes memorizing the lyrics of Paramore's entire discography, crafting various projects like knitted beanies and embroidered hoops, or eating an entire bag of Doritos in one sitting.</p>
-            <p>You can find me in the central Florida area walking my beautiful golden retriever, Kylo, at our local lake park, or spending time with my parents at their cabin in the Blue Ridge Mountains in Northeastern Tennessee.</p>
+            <img class="headshot" src="../my-portfolio/assets/mia-reid-headshot-2.jpg" alt="Mia Reid Headshot"/>
+            <p class="about-text">Hello! My name is Mia and I'm a digital marketer. I love to create things specifically for your website or mobile app.</p>
+            <p class="about-text">I am currently the Marketing Manager at Stax Payments, a leading FinTech company headquartered in Orlando, FL. More specifically, I work for the fastest-growing business unit within Stax, Stax Connect. It's been a dream of mine to breakthrough into the tech space in some capacity and I continue to pull a seat up to the table where I haven't been invited (yet).</p>
+            <p class="about-text">My marketing background is incredibly diverse, with a range of skillsets and industries served. Content strategy, email development, marketing operations, search engine optimization, and revenue operations are just a few of the skills I possess within my arsenal. Outside of marketing,  my skillset includes memorizing the lyrics of Paramore's entire discography, crafting various projects like knitted beanies and embroidered hoops, or eating an entire bag of Doritos in one sitting.</p>
+            <p class="about-text">You can find me in the central Florida area walking my beautiful golden retriever, Kylo, at our local lake park, or spending time with my parents at their cabin in the Blue Ridge Mountains in Northeastern Tennessee.</p>
+            <h3>Some Of My Skills:</h3>
+            <ul class="skill-list">
+                <li>Search Engine Optimization</li>
+                <li>Content Strategy</li>
+                <li>Graphic Design</li>
+                <li>Email Design &amp; Development</li>
+                <li>Marketing Automation</li>
+                <li>Salesforce Admin (Intermediate)</li>
+                <li>Revenue Operations</li>
+            </ul>
         </section>
-        <section>
+        <section class="work" id="work">
             <h2>My Work</h2>
-            <article>
-                <img src="../my-portfolio/assets/Fidelity-Real-Estate.png" alt="Fidelity Real Estate"/>
-                <h3>Fidelity Real Estate Website Re-Launch</h3>
-            </article>
-            <article>
-                <img src="../my-portfolio/assets/Home-Timeshares-Only.png" alt="Timeshares Only"/>
-                <h3>Timeshares Only Website Re-Launch</h3>
-            </article>
-            <article>
-                <img src="../my-portfolio/assets/PLG-Landing-Page.png" alt="Payments-Led Growth"/>
-                <h3>Stax Connect's Strategic Narrative</h3>
-            </article>
+            <section class="work-gallery">
+                <div class="portfolio-image-large">
+                    <a href="https://fidelityrealestate.com/">
+                        <img class="img-fill" src="../my-portfolio/assets/Fidelity-Real-Estate.png" alt="Fidelity Real Estate"/>
+                        <figcaption class="gallery-caption">Fidelity Real Estate Website Re-Launch</figcaption>
+                    </a>
+                </div>
+            <div class="portfolio-image">
+                <a href="https://timesharesonly.com/">
+                    <img class="img-fill" src="../my-portfolio/assets/Home-Timeshares-Only.png" alt="Timeshares Only"/>
+                    <figcaption class="gallery-caption">Timeshares Only Website Re-Launch</figcaption>
+                   </a>
+            </div>
+            <div class="portfolio-image">
+                <a href="https://staxpayments.com/payments-led-growth/">
+                    <img class="img-fill" src="../my-portfolio/assets/PLG-Landing-Page.png" alt="Payments-Led Growth"/>
+                    <figcaption class="gallery-caption">Stax Connect's Strategic Narrative</figcaption>
+                </a>
+            </div>
+            <div class="portfolio-image">
+                <a href="https://miamreid.github.io/prework-study-guide/">
+                    <img class="img-fill" src="../my-portfolio/assets/prework-study-guide.png" alt="Prework Study Guide"/>
+                    <figcaption class="gallery-caption">Prework Study Guide Site</figcaption>
+                </a>
+            </div>
+            <div class="portfolio-image">
+                <a href="https://miamreid.github.io/mod-1-challenge/">
+                    <img class="img-fill" src="../my-portfolio/assets/refactoring-challenge.png" alt="Refactoring Challenge"/>
+                    <figcaption class="gallery-caption">Refactoring Challenge</figcaption>
+                </a>
+            </div>
         </section>
-        <section>
+        </section>
+        <section class="contact" id="contact">
             <h2>Let's Chat</h2>
             <p>I'd love the chance to connect, whether for networking, mentee opportunities, or working together to make something magical.</p>
         </section>

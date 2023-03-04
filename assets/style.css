@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #B5C8CB;
+}
+
+header {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items:center;
+
+}
+
+h1 {
+    font-family: 'Bebas Neue', 'Helvetica', cursive;
+    font-size: 72px;
+    color: #fff;
+    padding: 25px;
+    text-align: left;
+    float: left;
+    }
+
+h2 {
+    font-family: 'Bebas Neue', 'Helvetica', cursive;
+    font-size: 48px;
+    color: #455768;
+    margin-bottom: 15px;
+}
+
+#h2-hero {
+    font-family: 'Bebas Neue', 'Helvetica', cursive;
+    font-size: 72px;
+    margin-bottom: 50px;
+}
+
+h3, figcaption {
+    font-family: 'Bebas Neue', 'Helvetica', cursive;
+    font-size: 24px;
+    color: #7297A9;
+    margin-bottom: 15px;
+}
+
+figcaption.gallery-caption {
+    padding: 25px;
+    position: absolute;
+    background: #455768;
+    border: none;
+    bottom: 25px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #455768;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+nav {
+    padding: 25px;
+    float: right;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    background-image: url("../assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 200px;
+}
+
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    background-color: #B5C8CB;
+    display: none;
+}
+
+.headshot {
+    width: 400px;
+    display: inline;
+    float: right;
+}
+
+.headshot:hover {
+    box-shadow: 20px 20px 0px 0px #455768;
+    transition: 0.3s ease;
+}
+
+.icons {
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+.about {
+    padding: 50px 200px 0px;
+    width: 100%;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.work {
+    padding: 50px 200px 0px;
+    width: 100%;
+}
+
+.work-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div a img {
+    opacity: .75;
+    transition: .3s ease;
+}
+
+div a img:hover {
+    opacity: 1;
+}
+
+.img-fill {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-position: top;
+}
+
+.portfolio-image-large {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #455768;
+    position: relative;
+    margin-bottom:10px;
+}
+
+.portfolio-image {
+    width: 48%;
+    height: 250px;
+    position: relative;
+    border: 2px solid #445768;
+    margin-bottom: 10px;
+}
+
+.skill-list {
+    list-style-type: none;
+    display: inline;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #455768;
+}
+
+.skill-list li::before {
+    content: "⇸ ";
+    font-size: 24px;
+    color:#455768;
+}
+
+.contact {
+    padding: 50px 200px 0px;
+    width: 100%;
+}
