@@ -12,12 +12,13 @@ header {
     width: 100%;
     flex-wrap: wrap;
     align-items:center;
+    color: #ffffff;
 
 }
 
 h1 {
     font-family: 'Bebas Neue', 'Helvetica', cursive;
-    font-size: 72px;
+    font-size: 52px;
     color: #fff;
     padding: 25px;
     text-align: left;
@@ -29,12 +30,18 @@ h2 {
     font-size: 48px;
     color: #455768;
     margin-bottom: 15px;
+    text-align: left;
 }
 
 #h2-hero {
     font-family: 'Bebas Neue', 'Helvetica', cursive;
     font-size: 72px;
     margin-bottom: 50px;
+    text-align: left;
+}
+
+h3 {
+    text-align: left;
 }
 
 h3, figcaption {
@@ -58,10 +65,11 @@ p {
     color: #455768;
     line-height: 24px;
     margin-bottom: 15px;
+    text-align: left;
 }
 
 nav {
-    padding: 25px;
+    padding: 35px;
     float: right;
 }
 
@@ -76,11 +84,14 @@ nav a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    color: #ffffff;
 }
+nav ul li a:hover {
+    background:transparent;
+    border-bottom: 2px solid #ffffff;
+  }
 
 a:-webkit-any-link {
-    color: -webkit-link;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -89,8 +100,13 @@ a:-webkit-any-link {
     width: 100%;
     background-image: url("../assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     padding: 200px;
+}
+
+.about, .work, .contact {
+    padding: 50px 200px 0px;
+    width: 100%;
 }
 
 aside {
@@ -105,7 +121,8 @@ aside {
 
 .headshot {
     width: 400px;
-    display: inline;
+    margin: 25px;
+    display: flex;
     float: right;
 }
 
@@ -120,25 +137,17 @@ aside {
     display: block;
 }
 
-.about {
-    padding: 50px 200px 0px;
-    width: 100%;
-}
-
 .about-text {
     width: 50%;
 }
 
-.work {
-    padding: 50px 200px 0px;
-    width: 100%;
-}
-
 .work-gallery {
     display: flex;
+    padding: 0px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 }
 
 div a img {
@@ -189,7 +198,76 @@ div a img:hover {
     color:#455768;
 }
 
-.contact {
-    padding: 50px 200px 0px;
-    width: 100%;
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 150px;
+    }
+
+    .about, .work, .contact {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .headshot {
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work-gallery {
+        position: relative;
+        width: 100%;
+        display: flex;
+    }
+
+    .portfolio-image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        display: flex;
+        background-image: url("../assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg");
+        background-size: cover;
+    }
+
+    h1 {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: flex;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    .about, .work, .contact {
+        padding: 50px;
+    }
+
 }
