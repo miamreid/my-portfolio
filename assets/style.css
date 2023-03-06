@@ -6,37 +6,32 @@
 
 body {
     background-color: #B5C8CB;
+    font-family: 'Bebas Neue', 'Helvetica', cursive;
 }
 
 header {
     width: 100%;
-    flex-wrap: wrap;
-    align-items:center;
     color: #ffffff;
 }
 
 h1 {
-    font-family: 'Bebas Neue', 'Helvetica', cursive;
     font-size: 52px;
     color: #fff;
     padding: 25px;
-    text-align: left;
     float: left;
-    }
+    display: flex;    
+}
 
+/* adds social navigation to side of screen*/
 .socials {
     width: 40px;
     position: fixed;
-    top: 690px;
+    bottom:0px;
     left: 40px;
-    right: auto; 
-    transition: 0.3s;  
+    right: auto;  
 }
 
-.socials a:hover {
-    left: 0;
-}
-
+/* sets formatting of social navigation icons*/
 .social-buttons {
     display: flex;
     flex-direction: column;
@@ -47,32 +42,106 @@ h1 {
     list-style: none;
 }
 
+/*hidden until max-width is 768 px, adds social icons under headshot image*/
+.social-buttons-under {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 10px;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+/* adds email to side of screen*/
+.email {
+    width: 40px;
+    position: fixed;
+    bottom:0px;
+    left: auto;
+    right: 40px; 
+}
+
+/*formatting of email div*/
+.email-text {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+/*line decoration after email*/
+.email-text::after {
+    content: "";
+    display: flex;
+    width: 1px;
+    height: 60px;
+    margin: 0px auto;
+    background-color:#fff;
+}
+
+/*sets unique link formatting and color of side email*/
+#email-link {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.1 em;
+    padding: 10px;
+    color:#445768;
+}
+
+#email-link-under {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.1 em;
+    padding: 10px;
+    color:#7297A9;
+}
+
+/*hover animation for email link on desktop*/
+#email-link:hover {
+    color:#ffffff;
+    transition: ease 0.3s;
+}
+
+/*hidden until max-width is 768 px, adds email under headshot image and icons*/
+.email-under {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 h2 {
-    font-family: 'Bebas Neue', 'Helvetica', cursive;
     font-size: 48px;
     color: #455768;
     margin-bottom: 15px;
     text-align: left;
 }
 
+/*changes color and size of hero h2 text*/
 #h2-hero {
-    font-family: 'Bebas Neue', 'Helvetica', cursive;
     font-size: 72px;
     margin-bottom: 50px;
     text-align: left;
+    color: #ffffff;
 }
 
-h3 {
+#h2-subtitle {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 15px;
     text-align: left;
 }
 
 h3, figcaption {
-    font-family: 'Bebas Neue', 'Helvetica', cursive;
     font-size: 24px;
     color: #7297A9;
     margin-bottom: 15px;
 }
 
+/*sets background color and formatting of portfolio image caption*/
 figcaption.gallery-caption {
     padding: 25px;
     position: absolute;
@@ -90,9 +159,16 @@ p {
     text-align: left;
 }
 
+/*formatting of nav bar to set line items to the right side of screen and allows for links to adjust to column layout for smaller screen sizes*/
 nav {
     padding: 35px;
     float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 nav ul li {
@@ -101,24 +177,19 @@ nav ul li {
     margin-left: 25px;
 }
 
-nav a {
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-}
+/*adds underline animation to nav links*/
 nav ul li a:hover {
-    background:transparent;
     border-bottom: 2px solid #ffffff;
   }
 
 a:-webkit-any-link {
     color: #ffffff;
     cursor: pointer;
+    text-decoration: none;
 }
 
+/*hero image and formatting*/
 .hero {
-    height: 500px;
     width: 100%;
     background-image: url("../assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg");
     background-size: cover;
@@ -126,32 +197,33 @@ a:-webkit-any-link {
     padding: 200px;
 }
 
+/*section formatting*/
 .about, .work, .contact {
     padding: 50px 200px 0px;
     width: 100%;
+
 }
 
+/*headshot image formatting and size*/
 .headshot {
-    width: 400px;
+    width: 50%;
     margin: 25px;
     display: flex;
     float: right;
 }
 
+/*adds hover animation to headshot*/
 .headshot:hover {
     box-shadow: 20px 20px 0px 0px #455768;
     transition: 0.3s ease;
 }
 
+/*social image icon sizes*/
 .icons {
     width: 50px;
-    display: block;
 }
 
-.about-text {
-    width: 50%;
-}
-
+/*makes portfolio gallery responsive*/
 .work-gallery {
     display: flex;
     padding: 0px;
@@ -161,8 +233,9 @@ a:-webkit-any-link {
     width: 100%;
 }
 
+/*adds hover transition to portfolio images and social icons */
 div a img {
-    opacity: .75;
+    opacity: .50;
     transition: .3s ease;
 }
 
@@ -170,6 +243,7 @@ div a img:hover {
     opacity: 1;
 }
 
+/*contains images to width and height without distorting image*/
 .img-fill {
     object-fit: cover;
     overflow: hidden;
@@ -178,6 +252,7 @@ div a img:hover {
     object-position: top;
 }
 
+/*makes the first image largest on bigger screens*/
 .portfolio-image-large {
     width: 100%;
     height: 500px;
@@ -209,38 +284,58 @@ div a img:hover {
     color:#455768;
 }
 
+/*responsive screen size formatting*/
+@media screen and (max-width: 4000px) {
+    .social-buttons-under {
+        visibility: hidden;
+        height: 0px;
+    }
+
+    .email-under {
+        visibility: hidden;
+        height: 0px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-    }
-
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .hero {
         padding: 150px;
     }
 
-    .about, .work, .contact {
+    main {
         flex-direction: column;
         display: flex;
     }
 
-    .headshot {
-        margin-bottom: 50px;
-        margin-left: 0px;
-    }
-
-    .about-text {
-        width: 100%;
+    .about, .work, .contact {
+        padding-left: 150px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .headshot {
+        width: 100%;
+        margin: 0px 0px 25px 25px;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .email {
+        display: none;
+    }
+
+    .social-buttons-under {
+        visibility:visible;
+        height: 100%;
+    }
+
+    .email-under {
+        visibility: visible;
+        height: 100%;
+    }
+    
     .work-gallery {
         position: relative;
         width: 100%;
@@ -250,20 +345,24 @@ div a img:hover {
     .portfolio-image {
         width: 100%;
     }
+
+    .about, .work, .contact {
+        align-items: center;
+        padding: 50px;
+    }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 554px) {
     header {
         display: flex;
         background-image: url("../assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg");
         background-size: cover;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
-    h1 {
-        padding: 10px;
-    }
-
-    nav {
+    h1, nav {
         padding: 10px;
     }
 
