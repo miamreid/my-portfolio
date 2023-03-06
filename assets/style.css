@@ -13,7 +13,6 @@ header {
     flex-wrap: wrap;
     align-items:center;
     color: #ffffff;
-
 }
 
 h1 {
@@ -24,6 +23,29 @@ h1 {
     text-align: left;
     float: left;
     }
+
+.socials {
+    width: 40px;
+    position: fixed;
+    top: 690px;
+    left: 40px;
+    right: auto; 
+    transition: 0.3s;  
+}
+
+.socials a:hover {
+    left: 0;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
 
 h2 {
     font-family: 'Bebas Neue', 'Helvetica', cursive;
@@ -96,27 +118,17 @@ a:-webkit-any-link {
 }
 
 .hero {
-    height: 800px;
+    height: 500px;
     width: 100%;
     background-image: url("../assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg");
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     padding: 200px;
 }
 
 .about, .work, .contact {
     padding: 50px 200px 0px;
     width: 100%;
-}
-
-aside {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    background-color: #B5C8CB;
-    display: none;
 }
 
 .headshot {
@@ -132,8 +144,7 @@ aside {
 }
 
 .icons {
-    width: 25px;
-    height: 25px;
+    width: 50px;
     display: block;
 }
 
