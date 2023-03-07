@@ -191,7 +191,7 @@ a:-webkit-any-link {
 /*hero image and formatting*/
 .hero {
     width: 100%;
-    background-image: url("../assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg");
+    background-image: url("../assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media-min.jpg");
     background-size: cover;
     background-position: top;
     padding: 200px;
@@ -355,7 +355,7 @@ div a img:hover {
 @media screen and (max-width: 554px) {
     header {
         display: flex;
-        background-image: url("../assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media.jpg");
+        background-image: url("../assets/galaxy-nature-aesthetic-background-starry-sky-mountain-remixed-media-min.jpg");
         background-size: cover;
         flex-direction: column;
         flex-wrap: wrap;
