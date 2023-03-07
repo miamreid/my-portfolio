@@ -16,6 +16,8 @@ I learned most about using the flexbox during this project in order to make my e
 
 Users that visit my portfolio website are able to read my brief "About Me", view my headshot, navigate to various methods of contacting me, and browse my previous projects. The navigation bar links to the different main sections of my portfolio page using anchor tags. Below the hero, users can see and click on different social profile icons, find my email address, and navigate through the page.
 
+Give it a look! [https://miamreid.github.io/my-portfolio/]
+
 ## Credits
 
 -Portfolio inspiration from [https://brittanychiang.com/] <br/>
